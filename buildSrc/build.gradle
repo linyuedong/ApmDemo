@@ -1,0 +1,26 @@
+plugins {
+    id 'java-library'
+    id 'groovy'
+}
+
+//apply plugin: 'groovy'  //必须
+
+dependencies {
+    implementation gradleApi() //必须
+    implementation localGroovy() //必须
+    //如果要使用 android 的 API，需要引用这个，实现 Transform 的时候会用到
+    //implementation 'com.android.tools.build:gradle:3.3.0'
+    // 如果使用 kotlin
+    // implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+}
+
+
+repositories {
+    jcenter()
+    mavenCentral() //必须
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+}

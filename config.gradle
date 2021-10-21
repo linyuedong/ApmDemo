@@ -1,0 +1,12 @@
+//脚本插件
+project.task("scriptPlugin") {
+    doLast {
+        println("$project.name:this is a scriptPlugin")
+    }
+}
+
+task hello{
+    doLast {
+        println "Hello Gradle"
+    }
+}
