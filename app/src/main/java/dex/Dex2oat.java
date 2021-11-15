@@ -25,7 +25,7 @@ import Util.ReflectUtils;
 
 public class Dex2oat {
 
-
+    private final String TAG = "Dex2OatHelper";
     private static final String COMPILE_FILTER_QUICKEN = "quicken";
     private static final String COMPILE_FILTER_SPEED = "speed";
     private static final int MAX_RETRY_COUNT = 3;
@@ -61,7 +61,7 @@ public class Dex2oat {
 
     }
 
-    private final String TAG = "Dex2OatHelper";
+
 
     public static void makeDex2OatV2(String dexFilePath, String oatFilePath) throws IOException {
         final File oatFile = new File(oatFilePath);
