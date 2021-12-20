@@ -1,3 +1,5 @@
+package com.sf.apmdemo;
+
 import android.app.Application;
 
 import com.sf.apmdemo.BuildConfig;
